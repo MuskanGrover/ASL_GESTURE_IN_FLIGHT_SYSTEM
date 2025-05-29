@@ -1,36 +1,78 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# AI-Based Sign Language Detection System for Flights
+
+An AI-powered system designed to assist needy passengers during flights by detecting American Sign Language (ASL) gestures and hand movements. The project integrates a Flask-based AI model with a ReactJS frontend and a Next.js backend to provide seamless communication and assistance.
+Now The Mute Users In the Flight Can easily access any Inflight Entertainment,Meal Accessibilty,Crew Assistance etc by just performing A sign Language Gesture.
+
+---
+
+## Project Overview
+
+This project aims to bridge communication gaps for passengers who use sign language, especially in-flight, by automatically detecting ASL gestures through a webcam and interpreting them into actionable requests.
+
+- **AI Model:** Flask server hosting the hand gesture and ASL detection model
+- **Frontend:** ReactJS-based user interface for real-time video capture and interaction
+- **Backend:** Next.js server managing API requests, user sessions, and communication between frontend and AI model
+
+---
+
+## Features
+
+- Real-time hand gesture and American Sign Language detection via webcam
+- Seamless integration of AI model (Flask) with frontend (ReactJS) and backend (Next.js)
+- Flight-specific assistance features, such as crew call, entertainment control, and feedback submission
+- User-friendly UI optimized for in-flight environments
+- Multi-modal communication support to aid disabled or hearing-impaired passengers
+
+---
+
+## Technologies Used
+
+- **AI/ML:** Python, Flask, OpenCV, TensorFlow/PyTorch (for ASL and hand gesture recognition)
+- **Frontend:** ReactJS, WebRTC (for webcam video capture), Tailwind CSS (for styling)
+- **Backend:** Next.js (API routing, session management)
+- **Communication:** REST API for Flask model and Next.js backend interaction
+
+---
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
+
+- Node.js (for ReactJS and Next.js)
+- Python 3.x (for Flask and AI model)
+- npm or yarn
+- pip (Python package manager)
+
+### Installation
+
+1. **Clone the repository**
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/yourusername/flight-sign-language-assistant.git
+cd flight-sign-language-assistant
 ```
+2 Setup AI Model (Flask)
+cd ai-model-flask
+pip install -r requirements.txt
+python app.py
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+3 Setup Backend (Next.js)
+cd ../backend-nextjs
+npm install
+npm run dev
+Next.js backend runs at http://localhost:3001 by default.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+4 Setup Frontend (ReactJS)
+cd ../frontend-react
+npm install
+npm start
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+5 Usage
+Open the frontend in a browser (http://localhost:3000)
+Allow webcam access when prompted
+Perform ASL gestures or hand signals
+The AI model processes gestures and sends interpreted commands through the backend
+Relevant flight assistance features activate based on recognized gestures (e.g., call crew, control entertainment,Vending Machine Functionality,Inflight Entertainment)
 
-## Learn More
 
-To learn more about Next.js, take a look at the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
