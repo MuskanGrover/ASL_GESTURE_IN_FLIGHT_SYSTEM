@@ -4,6 +4,7 @@ An AI-powered system designed to assist needy passengers during flights by detec
 Now The Mute Users In the Flight Can easily access any Inflight Entertainment,Meal Accessibilty,Crew Assistance etc by just performing A sign Language Gesture.
 
 ---
+<img width="932" alt="image" src="https://github.com/user-attachments/assets/fed67d5d-83ab-46ae-9a41-507d3b310651" />
 
 ## Project Overview
 
